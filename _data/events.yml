@@ -1,0 +1,30 @@
+# _data/events.yml
+#
+# Event listings for the home page and the events page.
+# Content mirrors what is published on https://www.vancouverodias.ca/events
+#
+# Fields:
+#   id          - unique slug for the event
+#   title       - event name
+#   date        - ISO date (YYYY-MM-DD), used for sorting and upcoming/past filtering
+#   date_label  - human readable date shown on the card
+#   time        - event start time as published
+#   venue       - venue name
+#   address     - full street address
+#   image       - path under /assets/images/events/
+#   description - short blurb shown on the card
+#   register_url - Google Form (or other) registration link; omit if not open yet
+
+- id: diwali-2025
+  title: "Diwali: Festival of Lights"
+  date: 2025-11-02
+  date_label: "Sunday, November 2, 2025"
+  time: "5:00 PM"
+  venue: "Sullivan Community Hall"
+  address: "6306 152 St, Surrey, BC V3S 3K9"
+  image: "/assets/images/events/event1.jpg"
+  description: >-
+    Join us for Diwali, the festival of lights, as we celebrate the triumph of light over
+    darkness. Experience the joy of coming together, sharing stories, and building
+    unforgettable memories with the Vancouver Odias community. Register now to secure your spot!
+  register_url: "https://forms.gle/wdT23q7mWRX7g8XS8"

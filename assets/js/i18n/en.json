@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "events": "Events",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "Celebrating Odia Culture in British Columbia",
+    "quicklinks": "Quick Links",
+    "contact": "Contact Us",
+    "followus": "Follow Us",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "detailsButton": "Details",
+    "registerButton": "Register"
+  },
+  "home": {
+    "banner": {
+      "title": "Welcome to VOCA",
+      "subtitle": "Celebrating Odia Culture in British Columbia"
+    },
+    "intro": "Vancouver Odia Cultural Association is a non-profit cultural association based in Surrey, BC, Canada. Our mission is to promote cultural awareness and unity within the community.",
+    "events": {
+      "title": "Upcoming Events",
+      "viewall": "View All Events"
+    },
+    "whyJoin": {
+      "title": "Why Join VOCA",
+      "intro": "Joining VOCA means becoming part of a vibrant, welcoming community that celebrates the beauty of Odia culture while embracing the diversity of Canada. Whether you were born in Odisha, have Odia heritage, or simply share an interest in Indian culture, VOCA offers something meaningful for everyone.",
+      "reason1": {
+        "title": "1. Preserve and Share Your Heritage",
+        "text": "Keep Odia traditions, language, music, dance, and festivals alive for future generations. Help your children understand and appreciate where they come from — while growing up proud Canadians."
+      },
+      "reason2": {
+        "title": "2. Connect with Community",
+        "text": "Meet fellow Odias and families across British Columbia. VOCA provides a warm, inclusive space to form friendships, network, and support one another through cultural, social, and educational activities."
+      },
+      "reason3": {
+        "title": "3. Celebrate Together",
+        "text": "Take part in events such as Raja Parba, Rath Yatra, Durga Puja, and Utkal Divas — filled with music, dance, food, and storytelling that bring Odisha to life right here in Canada."
+      },
+      "reason4": {
+        "title": "4. Collaborate and Contribute",
+        "text": "VOCA partners with other cultural organizations and Canadian institutions to promote multicultural understanding and community development. Members can volunteer, lead initiatives, or contribute their skills to strengthen our collective impact."
+      },
+      "reason5": {
+        "title": "5. Belong to a Purpose-Driven Family",
+        "text": "At VOCA, we value mutual respect, inclusivity, and harmony. We celebrate both Indian and Canadian values — creating a bridge between cultures, generations, and communities."
+      },
+      "closing": "Join VOCA today — and be part of a growing family that honors its roots while shaping a vibrant, shared future in Canada.",
+      "button": "Join us now"
+    },
+    "calendar": {
+      "title": "Event Calendar"
+    },
+    "about": {
+      "title": "About VOCA",
+      "content": "The Vancouver Odia Cultural Association (VOCA) is a non-profit organization dedicated to preserving, promoting, and celebrating the rich cultural heritage of Odisha, India, within the Canadian multicultural landscape. Based in British Columbia, VOCA brings together Odia families and individuals who share a common bond with their roots in Odisha while embracing the values of Canadian society.",
+      "button": "Learn More About Us"
+    },
+    "gallery": {
+      "title": "Photo Gallery",
+      "viewall": "View Full Gallery"
+    }
+  },
+  "events": {
+    "pageTitle": "Experience the vibrancy of Vancouver Odias",
+    "pageIntro": "Stay up-to-date with our social gatherings, cultural events, picnics, and festivals. Join us in celebrating our community and creating lasting memories. Discover our upcoming events and register to participate!",
+    "timingLabel": "Event Timing:",
+    "addressLabel": "Event Address:",
+    "comingSoon": {
+      "title": "More events coming soon!",
+      "text": "Stay tuned for more exciting events from Vancouver Odias! We're always planning new ways to bring our community together and celebrate our culture. Check back regularly for updates, or follow us on social media to be the first to know!"
+    },
+    "diwali-2025": {
+      "title": "Diwali: Festival of Lights",
+      "dateLabel": "Sunday, November 2, 2025 · 5:00 PM",
+      "venue": "Sullivan Community Hall, 6306 152 St, Surrey, BC V3S 3K9",
+      "description": "Join us for Diwali, the festival of lights, as we celebrate the triumph of light over darkness. Experience the joy of coming together, sharing stories, and building unforgettable memories with the Vancouver Odias community. Register now to secure your spot!"
+    }
+  },
+  "about": {
+    "pageTitle": "About Us",
+    "intro": "Welcome to Vancouver Odias. This page will help you understand our background, mission, vision, and values. We aim to connect with people from the province of Odisha in India who are new to Canada, providing a community and a cultural anchor as they settle in.",
+    "story": {
+      "title": "Our Story",
+      "text1": "The Vancouver Odia Cultural Association (VOCA) is a nonprofit organization dedicated to preserving, promoting, and celebrating the rich cultural heritage of Odisha, India, within the Canadian multicultural landscape. Based in British Columbia, VOCA brings together Odia families and individuals who share a common bond with their roots in Odisha while embracing the values of Canadian society.",
+      "text2": "Our mission is to ensure that future generations remain connected to their Odia identity through language, art, dance, literature, and traditions, while fostering pride, inclusivity, and cultural awareness. From organizing cultural festivals, community gatherings, and educational initiatives to collaborating with Canadian cultural hubs and other communities, VOCA is committed to building bridges of friendship and understanding.",
+      "button": "Get involved"
+    },
+    "values": {
+      "title": "Our Values",
+      "text1": "We believe in mutual respect, inclusivity, and cultural harmony. Guided by these values, we strive to create a welcoming space where Odia culture thrives alongside Canada's diverse multicultural mosaic.",
+      "text2": "Together, we celebrate our past, honor our traditions, and inspire future generations to carry forward the timeless spirit of Odisha—rooted in heritage, flourishing in Canada.",
+      "button": "See our events"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text1": "Vancouver Odias is more than just a non-profit; it's a place to keep our ancestry, culture, traditions, art, and language alive and pass them on to new generations.",
+      "text2": "We strive to be a thriving and inclusive Odia cultural hub in British Columbia that inspires pride in our art, heritage, connects generations, and builds bridges of friendship and understanding within the broader Canadian multicultural landscape.",
+      "button": "Learn more about us here!"
+    },
+    "whatwedo": {
+      "title": "What We Do",
+      "intro": "VOCA is more than just an association; it's a living, breathing celebration of Odia identity. Throughout the year, we organize a diverse range of events that bring our community together, strengthen bonds, and offer a taste of Odisha right here in Canada. Our calendar is filled with:",
+      "celebrations": {
+        "title": "Vibrant Cultural Celebrations",
+        "text": "We organize and celebrate major Odia and Indian festivals, ensuring that the traditions and customs are passed down and enjoyed by all. These include:",
+        "raja": "Raja Parba: The traditional Odia festival welcoming the monsoon and honouring the earth.",
+        "rath": "Rath Yatra: The majestic chariot festival, a spiritual and communal spectacle.",
+        "durga": "Durga Puja: Celebrating the goddess Durga with rituals, music, and community feasting.",
+        "utkal": "Utkal Divas: A significant day commemorating the formation of the state of Odisha, filled with cultural performances and reflections on our heritage.",
+        "diwali": "Diwali: The festival of lights, symbolizing the triumph of light over darkness."
+      },
+      "activities": {
+        "title": "Engaging Community Activities",
+        "text": "Beyond festivals, we believe in holistic community engagement. Our activities are designed to cater to diverse interests and age groups:",
+        "gatherings": "Social Gatherings & Picnics: Informal get-togethers that help families across British Columbia connect.",
+        "arts": "Promoting Odia Arts & Literature: We actively encourage and showcase Odia artistic talents, including music, dance, literature, and traditional crafts, providing a platform for expression and appreciation.",
+        "collaboration": "Multicultural Collaboration: We partner with other cultural organizations and Canadian institutions to promote multicultural understanding and community development.",
+        "support": "Community Support & Networking: VOCA serves as a valuable resource for newly arrived Odias, helping them settle into Canadian society and connecting them with established community members for support and networking opportunities."
+      },
+      "join": "Join us at the Vancouver Odias Cultural Association as we continue to build a vibrant and thriving community, preserving our cherished traditions and creating new memories together. We welcome all who share an interest in Odia culture to become a part of our growing family!"
+    }
+  },
+  "contact": {
+    "title": "Contact us",
+    "intro": "Have a question or want to get involved? Reach out to us and we'll get back to you as soon as possible.",
+    "infoTitle": "Contact Information",
+    "emailLabel": "Email:",
+    "addressLabel": "Location:",
+    "address": "Surrey, BC, Canada",
+    "followTitle": "Follow us on Social Media!!",
+    "facebookGroup": "Facebook Group"
+  },
+  "galleryPage": {
+    "title": "Photo Gallery",
+    "subtitle": "Browse through photos from our events and gatherings.",
+    "empty": {
+      "message": "The photo gallery is currently being updated or is not yet configured. Please check back later.",
+      "adminNote": "(Site administrators: Please ensure the `_data/gdrive_gallery.yml` file is correctly populated with image data from Google Drive.)"
+    }
+  }
+}

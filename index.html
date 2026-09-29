@@ -1,0 +1,170 @@
+---
+layout: default
+title: Home
+lang: en
+---
+
+<!-- Banner Section -->
+<section class="banner">
+  <img src="{{ '/assets/images/banner.jpg' | relative_url }}" alt="Vancouver Odias Cultural Association (VOCA)" class="banner-image">
+  <div class="banner-overlay">
+    <div class="banner-content">
+      <h1 data-i18n="home.banner.title">Welcome to VOCA</h1>
+      <p data-i18n="home.banner.subtitle">Celebrating Odia Culture in British Columbia</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- Intro Section -->
+<section class="home-section intro-section">
+  <div class="container">
+    <p class="lead" data-i18n="home.intro">Vancouver Odia Cultural Association is a non-profit cultural association based in Surrey, BC, Canada. Our mission is to promote cultural awareness and unity within the community.</p>
+  </div>
+
+</section>
+
+<!-- Featured Events Section -->
+<section class="home-section featured-events">
+  <div class="container">
+    <div class="section-header">
+      <h2 data-i18n="home.events.title">Upcoming Events</h2>
+    </div>
+
+    <div class="events-grid">
+      {% assign upcoming = site.data.events | sort: 'date' %}
+      {% for event in upcoming %}
+      <div class="event-card">
+        <div class="event-image">
+          <img src="{{ event.image | relative_url }}" data-i18n-alt="events.{{ event.id }}.title" alt="{{ event.title | escape }}">
+        </div>
+        <div class="event-content">
+          <div class="event-date" data-i18n="events.{{ event.id }}.dateLabel">{{ event.date_label }}{% if event.time %} &middot; {{ event.time }}{% endif %}</div>
+          <h3 class="event-title" data-i18n="events.{{ event.id }}.title">{{ event.title }}</h3>
+          <div class="event-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span data-i18n="events.{{ event.id }}.venue">{{ event.venue }}, {{ event.address }}</span>
+          </div>
+          <p class="event-description" data-i18n="events.{{ event.id }}.description">{{ event.description }}</p>
+          {% if event.register_url %}
+          <a href="{{ event.register_url }}" class="btn" target="_blank" rel="noopener" data-i18n="common.registerButton">Register</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="{{ '/events' | relative_url }}" class="btn-outline" data-i18n="home.events.viewall">View All Events</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- Why Join VOCA Section -->
+<section class="home-section why-join-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 data-i18n="home.whyJoin.title">Why Join VOCA</h2>
+    </div>
+
+    <p data-i18n="home.whyJoin.intro">Joining VOCA means becoming part of a vibrant, welcoming community that celebrates the beauty of Odia culture while embracing the diversity of Canada. Whether you were born in Odisha, have Odia heritage, or simply share an interest in Indian culture, VOCA offers something meaningful for everyone.</p>
+
+    <div class="reasons-list">
+      <div class="reason">
+        <h3 data-i18n="home.whyJoin.reason1.title">1. Preserve and Share Your Heritage</h3>
+        <p data-i18n="home.whyJoin.reason1.text">Keep Odia traditions, language, music, dance, and festivals alive for future generations. Help your children understand and appreciate where they come from — while growing up proud Canadians.</p>
+      </div>
+
+      <div class="reason">
+        <h3 data-i18n="home.whyJoin.reason2.title">2. Connect with Community</h3>
+        <p data-i18n="home.whyJoin.reason2.text">Meet fellow Odias and families across British Columbia. VOCA provides a warm, inclusive space to form friendships, network, and support one another through cultural, social, and educational activities.</p>
+      </div>
+
+      <div class="reason">
+        <h3 data-i18n="home.whyJoin.reason3.title">3. Celebrate Together</h3>
+        <p data-i18n="home.whyJoin.reason3.text">Take part in events such as Raja Parba, Rath Yatra, Durga Puja, and Utkal Divas — filled with music, dance, food, and storytelling that bring Odisha to life right here in Canada.</p>
+      </div>
+
+      <div class="reason">
+        <h3 data-i18n="home.whyJoin.reason4.title">4. Collaborate and Contribute</h3>
+        <p data-i18n="home.whyJoin.reason4.text">VOCA partners with other cultural organizations and Canadian institutions to promote multicultural understanding and community development. Members can volunteer, lead initiatives, or contribute their skills to strengthen our collective impact.</p>
+      </div>
+
+      <div class="reason">
+        <h3 data-i18n="home.whyJoin.reason5.title">5. Belong to a Purpose-Driven Family</h3>
+        <p data-i18n="home.whyJoin.reason5.text">At VOCA, we value mutual respect, inclusivity, and harmony. We celebrate both Indian and Canadian values — creating a bridge between cultures, generations, and communities.</p>
+      </div>
+    </div>
+
+    <p data-i18n="home.whyJoin.closing">Join VOCA today — and be part of a growing family that honors its roots while shaping a vibrant, shared future in Canada.</p>
+
+    <div class="text-center mt-4">
+      <a href="mailto:{{ site.email }}" class="btn" data-i18n="home.whyJoin.button">Join us now</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- Calendar Section -->
+<section class="home-section calendar-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 data-i18n="home.calendar.title">Event Calendar</h2>
+    </div>
+
+    <div class="calendar-container">
+      <iframe src="https://calendar.google.com/calendar/embed?src=vancouverodiaassociation%40gmail.com&ctz=America%2FVancouver"
+              title="VOCA Event Calendar"
+              style="border: 0"
+              width="800"
+              height="600"
+              frameborder="0"
+              scrolling="no">
+      </iframe>
+    </div>
+  </div>
+
+</section>
+
+<!-- About Section -->
+<section class="home-section about-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 data-i18n="home.about.title">About VOCA</h2>
+    </div>
+
+    <div class="about-content">
+      <div class="row">
+        <div class="col-md-6">
+          <p data-i18n="home.about.content">The Vancouver Odia Cultural Association (VOCA) is a non-profit organization dedicated to preserving, promoting, and celebrating the rich cultural heritage of Odisha, India, within the Canadian multicultural landscape. Based in British Columbia, VOCA brings together Odia families and individuals who share a common bond with their roots in Odisha while embracing the values of Canadian society.</p>
+          <a href="{{ '/about' | relative_url }}" class="btn-outline" data-i18n="home.about.button">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Gallery Preview Section -->
+<section class="home-section gallery-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 data-i18n="home.gallery.title">Photo Gallery</h2>
+    </div>
+
+    <div class="gallery-grid">
+      {% for i in (1..8) %}
+      <a href="{{ '/assets/images/gallery/gallery' | append: i | append: '.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-title="VOCA community photo {{ i }}">
+        <img src="{{ '/assets/images/gallery/gallery' | append: i | append: '.jpg' | relative_url }}" alt="VOCA community photo {{ i }}" loading="lazy">
+        <span class="gallery-item-overlay"><i class="fas fa-search-plus"></i></span>
+      </a>
+      {% endfor %}
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="{{ '/gallery/' | relative_url }}" class="btn-outline" data-i18n="home.gallery.viewall">View Full Gallery</a>
+    </div>
+  </div>
+
+</section>

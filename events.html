@@ -1,0 +1,49 @@
+---
+layout: default
+title: Events
+lang: en
+---
+
+<section class="page-section featured-events">
+  <div class="container">
+    <div class="section-header">
+      <br>
+      <h1 data-i18n="events.pageTitle">Experience the vibrancy of Vancouver Odias</h1>
+      <p data-i18n="events.pageIntro">Stay up-to-date with our social gatherings, cultural events, picnics, and festivals. Join us in celebrating our community and creating lasting memories. Discover our upcoming events and register to participate!</p>
+    </div>
+
+    <div class="events-grid">
+      {% assign all_events = site.data.events | sort: 'date' %}
+      {% for event in all_events %}
+      <div class="event-card">
+        <div class="event-image">
+          <img src="{{ event.image | relative_url }}" alt="{{ event.title | escape }}">
+        </div>
+        <div class="event-content">
+          <h3 class="event-title" data-i18n="events.{{ event.id }}.title">{{ event.title }}</h3>
+          <p class="event-description" data-i18n="events.{{ event.id }}.description">{{ event.description }}</p>
+          <div class="event-date">
+            <span data-i18n="events.timingLabel">Event Timing:</span>
+            <strong>{{ event.time }}, {{ event.date_label }}</strong>
+          </div>
+          <div class="event-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>
+              <span data-i18n="events.addressLabel">Event Address:</span>
+              {{ event.address }} ({{ event.venue }})
+            </span>
+          </div>
+          {% if event.register_url %}
+          <a href="{{ event.register_url }}" class="btn" target="_blank" rel="noopener" data-i18n="common.registerButton">Register</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="events-coming-soon">
+      <h2 data-i18n="events.comingSoon.title">More events coming soon!</h2>
+      <p data-i18n="events.comingSoon.text">Stay tuned for more exciting events from Vancouver Odias! We're always planning new ways to bring our community together and celebrate our culture. Check back regularly for updates, or follow us on social media to be the first to know!</p>
+    </div>
+  </div>
+</section>

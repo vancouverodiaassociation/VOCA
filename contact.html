@@ -1,0 +1,36 @@
+---
+layout: default
+title: Contact
+lang: en
+---
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <br>
+      <h1 data-i18n="contact.title">Contact us</h1>
+    </div>
+    <p data-i18n="contact.intro">Have a question or want to get involved? Reach out to us and we'll get back to you as soon as possible.</p>
+
+    <div>
+      <h2 data-i18n="contact.infoTitle">Contact Information</h2>
+      <p><strong data-i18n="contact.emailLabel">Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p><strong data-i18n="contact.addressLabel">Location:</strong> <span data-i18n="contact.address">Surrey, BC, Canada</span></p>
+    </div>
+
+    <div>
+      <h2 data-i18n="contact.followTitle">Follow us on Social Media!!</h2>
+      <ul class="contact-social">
+        {% if site.social_links.facebook %}
+        <li><a href="{{ site.social_links.facebook }}" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+        {% endif %}
+        {% if site.social_links.facebook_group %}
+        <li><a href="{{ site.social_links.facebook_group }}" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> <span data-i18n="contact.facebookGroup">Facebook Group</span></a></li>
+        {% endif %}
+        {% if site.social_links.instagram %}
+        <li><a href="{{ site.social_links.instagram }}" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> Instagram</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</section>
