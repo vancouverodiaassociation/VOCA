@@ -1,0 +1,28 @@
+# _data/sponsors.yml
+#
+# Sponsors shown in the "Our Sponsors" section on the home page.
+#
+# Fields:
+#   name  - sponsor name (required; used as alt text, and shown as text when no logo is set)
+#   logo  - optional path to a logo, e.g. /assets/images/sponsors/acme.png
+#           (transparent PNG or SVG, roughly 3:1 landscape, works best)
+#   url   - optional sponsor website; the tile becomes a link when set
+#
+# TODO: replace these placeholders with real sponsors before publishing.
+# Delete all entries to show only the "Become a Sponsor" call to action.
+
+- name: "Sponsor One"
+  logo: ""
+  url: ""
+
+- name: "Sponsor Two"
+  logo: ""
+  url: ""
+
+- name: "Sponsor Three"
+  logo: ""
+  url: ""
+
+- name: "Sponsor Four"
+  logo: ""
+  url: ""

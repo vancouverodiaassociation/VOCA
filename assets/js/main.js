@@ -18,10 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
     bannerImages.forEach(img => {
       const container = img.parentElement;
       if (container) {
-        let aspectRatio = 0.4; // Default for larger screens
-        if (window.innerWidth < 768) { // Check for small screens
-          aspectRatio = 0.7; // Use a larger aspect ratio for smaller screens
+        if (window.innerWidth < 768) {
+          // Small screens: let CSS size the banner to the image's natural height (no empty space)
+          container.style.height = '';
+          return;
         }
+        const aspectRatio = 0.4; // Larger screens: fixed hero proportion
         container.style.height = `${Math.round(container.offsetWidth * aspectRatio)}px`; // Use Math.round for whole pixels
       }
     });

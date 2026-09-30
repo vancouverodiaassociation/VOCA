@@ -4,53 +4,136 @@ title: About Us
 lang: en
 ---
 
-<div class="container">
-  <div class="about-page">
-    <div class="about-content">
-      <br>
-      <h2 data-i18n="about.pageTitle">About Us</h2>
-      <p data-i18n="about.intro">Welcome to Vancouver Odias. This page will help you understand our background, mission, vision, and values. We aim to connect with people from the province of Odisha in India who are new to Canada, providing a community and a cultural anchor as they settle in.</p>
+<!-- Page hero -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow eyebrow-light" data-i18n="about.eyebrow">Vancouver Odia Cultural Association</span>
+    <h1 data-i18n="about.pageTitle">About Us</h1>
+    <p data-i18n="about.intro">Welcome to Vancouver Odias. This page will help you understand our background, mission, vision, and values. We aim to connect with people from the province of Odisha in India who are new to Canada, providing a community and a cultural anchor as they settle in.</p>
+  </div>
+</section>
 
-      <h3 data-i18n="about.story.title">Our Story</h3>
-      <p data-i18n="about.story.text1">The Vancouver Odia Cultural Association (VOCA) is a nonprofit organization dedicated to preserving, promoting, and celebrating the rich cultural heritage of Odisha, India, within the Canadian multicultural landscape. Based in British Columbia, VOCA brings together Odia families and individuals who share a common bond with their roots in Odisha while embracing the values of Canadian society.</p>
-      <p data-i18n="about.story.text2">Our mission is to ensure that future generations remain connected to their Odia identity through language, art, dance, literature, and traditions, while fostering pride, inclusivity, and cultural awareness. From organizing cultural festivals, community gatherings, and educational initiatives to collaborating with Canadian cultural hubs and other communities, VOCA is committed to building bridges of friendship and understanding.</p>
-      <p><a href="mailto:{{ site.email }}" class="btn" data-i18n="about.story.button">Get involved</a></p>
-
-      <h3 data-i18n="about.values.title">Our Values</h3>
-      <p data-i18n="about.values.text1">We believe in mutual respect, inclusivity, and cultural harmony. Guided by these values, we strive to create a welcoming space where Odia culture thrives alongside Canada's diverse multicultural mosaic.</p>
-      <p data-i18n="about.values.text2">Together, we celebrate our past, honor our traditions, and inspire future generations to carry forward the timeless spirit of Odisha—rooted in heritage, flourishing in Canada.</p>
-      <p><a href="{{ '/events' | relative_url }}" class="btn-outline" data-i18n="about.values.button">See our events</a></p>
-
-      <h3 data-i18n="about.vision.title">Our Vision</h3>
-      <p data-i18n="about.vision.text1">Vancouver Odias is more than just a non-profit; it's a place to keep our ancestry, culture, traditions, art, and language alive and pass them on to new generations.</p>
-      <p data-i18n="about.vision.text2">We strive to be a thriving and inclusive Odia cultural hub in British Columbia that inspires pride in our art, heritage, connects generations, and builds bridges of friendship and understanding within the broader Canadian multicultural landscape.</p>
-      {% if site.membership_info_url %}
-      <p><a href="{{ site.membership_info_url }}" target="_blank" rel="noopener" class="btn-outline" data-i18n="about.vision.button">Learn more about us here!</a></p>
-      {% endif %}
-
-      <h3 data-i18n="about.whatwedo.title">What We Do</h3>
-      <p data-i18n="about.whatwedo.intro">VOCA is more than just an association; it's a living, breathing celebration of Odia identity. Throughout the year, we organize a diverse range of events that bring our community together, strengthen bonds, and offer a taste of Odisha right here in Canada. Our calendar is filled with:</p>
-
-      <h4 data-i18n="about.whatwedo.celebrations.title">Vibrant Cultural Celebrations</h4>
-      <p data-i18n="about.whatwedo.celebrations.text">We organize and celebrate major Odia and Indian festivals, ensuring that the traditions and customs are passed down and enjoyed by all. These include:</p>
-      <ul>
-        <li data-i18n="about.whatwedo.celebrations.raja">Raja Parba: The traditional Odia festival welcoming the monsoon and honouring the earth.</li>
-        <li data-i18n="about.whatwedo.celebrations.rath">Rath Yatra: The majestic chariot festival, a spiritual and communal spectacle.</li>
-        <li data-i18n="about.whatwedo.celebrations.durga">Durga Puja: Celebrating the goddess Durga with rituals, music, and community feasting.</li>
-        <li data-i18n="about.whatwedo.celebrations.utkal">Utkal Divas: A significant day commemorating the formation of the state of Odisha, filled with cultural performances and reflections on our heritage.</li>
-        <li data-i18n="about.whatwedo.celebrations.diwali">Diwali: The festival of lights, symbolizing the triumph of light over darkness.</li>
-      </ul>
-
-      <h4 data-i18n="about.whatwedo.activities.title">Engaging Community Activities</h4>
-      <p data-i18n="about.whatwedo.activities.text">Beyond festivals, we believe in holistic community engagement. Our activities are designed to cater to diverse interests and age groups:</p>
-      <ul>
-        <li data-i18n="about.whatwedo.activities.gatherings">Social Gatherings & Picnics: Informal get-togethers that help families across British Columbia connect.</li>
-        <li data-i18n="about.whatwedo.activities.arts">Promoting Odia Arts & Literature: We actively encourage and showcase Odia artistic talents, including music, dance, literature, and traditional crafts, providing a platform for expression and appreciation.</li>
-        <li data-i18n="about.whatwedo.activities.collaboration">Multicultural Collaboration: We partner with other cultural organizations and Canadian institutions to promote multicultural understanding and community development.</li>
-        <li data-i18n="about.whatwedo.activities.support">Community Support & Networking: VOCA serves as a valuable resource for newly arrived Odias, helping them settle into Canadian society and connecting them with established community members for support and networking opportunities.</li>
-      </ul>
-
-      <p data-i18n="about.whatwedo.join">Join us at the Vancouver Odias Cultural Association as we continue to build a vibrant and thriving community, preserving our cherished traditions and creating new memories together. We welcome all who share an interest in Odia culture to become a part of our growing family!</p>
+<!-- Our Story -->
+<section class="page-block about-story">
+  <div class="container">
+    <div class="split-grid">
+      <div class="split-media">
+        <img src="{{ '/assets/images/gallery/gallery2.jpg' | relative_url }}" alt="VOCA members gathered at a community event" loading="lazy">
+      </div>
+      <div class="split-text">
+        <span class="eyebrow" data-i18n="about.story.eyebrow">Who we are</span>
+        <h2 data-i18n="about.story.title">Our Story</h2>
+        <p data-i18n="about.story.text1">The Vancouver Odia Cultural Association (VOCA) is a nonprofit organization dedicated to preserving, promoting, and celebrating the rich cultural heritage of Odisha, India, within the Canadian multicultural landscape. Based in British Columbia, VOCA brings together Odia families and individuals who share a common bond with their roots in Odisha while embracing the values of Canadian society.</p>
+        <p data-i18n="about.story.text2">Our mission is to ensure that future generations remain connected to their Odia identity through language, art, dance, literature, and traditions, while fostering pride, inclusivity, and cultural awareness. From organizing cultural festivals, community gatherings, and educational initiatives to collaborating with Canadian cultural hubs and other communities, VOCA is committed to building bridges of friendship and understanding.</p>
+        <a href="mailto:{{ site.email }}" class="btn" data-i18n="about.story.button">Get involved</a>
+      </div>
     </div>
   </div>
-</div>
+</section>
+
+<!-- Values & Vision -->
+<section class="page-block alt-bg">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow" data-i18n="about.guiding.eyebrow">What guides us</span>
+      <h2 data-i18n="about.guiding.title">Our Values &amp; Vision</h2>
+    </div>
+    <div class="pillar-grid">
+      <article class="pillar-card">
+        <div class="pillar-icon"><i class="fas fa-hand-holding-heart" aria-hidden="true"></i></div>
+        <h3 data-i18n="about.values.title">Our Values</h3>
+        <p data-i18n="about.values.text1">We believe in mutual respect, inclusivity, and cultural harmony. Guided by these values, we strive to create a welcoming space where Odia culture thrives alongside Canada's diverse multicultural mosaic.</p>
+        <p data-i18n="about.values.text2">Together, we celebrate our past, honor our traditions, and inspire future generations to carry forward the timeless spirit of Odisha—rooted in heritage, flourishing in Canada.</p>
+      </article>
+      <article class="pillar-card">
+        <div class="pillar-icon"><i class="fas fa-eye" aria-hidden="true"></i></div>
+        <h3 data-i18n="about.vision.title">Our Vision</h3>
+        <p data-i18n="about.vision.text1">Vancouver Odias is more than just a non-profit; it's a place to keep our ancestry, culture, traditions, art, and language alive and pass them on to new generations.</p>
+        <p data-i18n="about.vision.text2">We strive to be a thriving and inclusive Odia cultural hub in British Columbia that inspires pride in our art, heritage, connects generations, and builds bridges of friendship and understanding within the broader Canadian multicultural landscape.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- What We Do -->
+<section class="page-block what-we-do">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow" data-i18n="about.whatwedo.eyebrow">Throughout the year</span>
+      <h2 data-i18n="about.whatwedo.title">What We Do</h2>
+      <p class="section-intro" data-i18n="about.whatwedo.intro">VOCA is more than just an association; it's a living, breathing celebration of Odia identity. Throughout the year, we organize a diverse range of events that bring our community together, strengthen bonds, and offer a taste of Odisha right here in Canada. Our calendar is filled with:</p>
+    </div>
+
+    <h3 class="subsection-title" data-i18n="about.whatwedo.celebrations.title">Vibrant Cultural Celebrations</h3>
+    <p class="subsection-intro" data-i18n="about.whatwedo.celebrations.text">We organize and celebrate major Odia and Indian festivals, ensuring that the traditions and customs are passed down and enjoyed by all. These include:</p>
+    <ul class="festival-grid">
+      <li><i class="fas fa-cloud-rain" aria-hidden="true"></i><span data-i18n="about.whatwedo.celebrations.raja">Raja Parba: The traditional Odia festival welcoming the monsoon and honouring the earth.</span></li>
+      <li><i class="fas fa-dharmachakra" aria-hidden="true"></i><span data-i18n="about.whatwedo.celebrations.rath">Rath Yatra: The majestic chariot festival, a spiritual and communal spectacle.</span></li>
+      <li><i class="fas fa-om" aria-hidden="true"></i><span data-i18n="about.whatwedo.celebrations.durga">Durga Puja: Celebrating the goddess Durga with rituals, music, and community feasting.</span></li>
+      <li><i class="fas fa-flag" aria-hidden="true"></i><span data-i18n="about.whatwedo.celebrations.utkal">Utkal Divas: A significant day commemorating the formation of the state of Odisha, filled with cultural performances and reflections on our heritage.</span></li>
+      <li><i class="fas fa-fire" aria-hidden="true"></i><span data-i18n="about.whatwedo.celebrations.diwali">Diwali: The festival of lights, symbolizing the triumph of light over darkness.</span></li>
+    </ul>
+
+    <h3 class="subsection-title" data-i18n="about.whatwedo.activities.title">Engaging Community Activities</h3>
+    <p class="subsection-intro" data-i18n="about.whatwedo.activities.text">Beyond festivals, we believe in holistic community engagement. Our activities are designed to cater to diverse interests and age groups:</p>
+    <ul class="activity-grid">
+      <li><div class="activity-icon"><i class="fas fa-people-roof" aria-hidden="true"></i></div><span data-i18n="about.whatwedo.activities.gatherings">Social Gatherings & Picnics: Informal get-togethers that help families across British Columbia connect.</span></li>
+      <li><div class="activity-icon"><i class="fas fa-palette" aria-hidden="true"></i></div><span data-i18n="about.whatwedo.activities.arts">Promoting Odia Arts & Literature: We actively encourage and showcase Odia artistic talents, including music, dance, literature, and traditional crafts, providing a platform for expression and appreciation.</span></li>
+      <li><div class="activity-icon"><i class="fas fa-handshake" aria-hidden="true"></i></div><span data-i18n="about.whatwedo.activities.collaboration">Multicultural Collaboration: We partner with other cultural organizations and Canadian institutions to promote multicultural understanding and community development.</span></li>
+      <li><div class="activity-icon"><i class="fas fa-hands-helping" aria-hidden="true"></i></div><span data-i18n="about.whatwedo.activities.support">Community Support & Networking: VOCA serves as a valuable resource for newly arrived Odias, helping them settle into Canadian society and connecting them with established community members for support and networking opportunities.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Our Team (data: _data/team.yml) -->
+{% assign team = site.data.team %}
+{% if team and team.members.size > 0 %}
+<section class="page-block team-section alt-bg" id="team">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow" data-i18n="about.team.eyebrow">Executive committee</span>
+      <h2><span data-i18n="about.team.title">Our Team</span>, {{ team.year }}</h2>
+      <p class="section-intro" data-i18n="about.team.intro">Meet the volunteers who lead VOCA this year and bring our events and programmes to life.</p>
+    </div>
+
+    <div class="team-grid">
+      {% for m in team.members %}
+      <article class="team-card">
+        <div class="team-photo">
+          {% if m.photo and m.photo != "" %}
+          <img src="{{ m.photo | relative_url }}" alt="{{ m.name | escape }}, {{ m.role | escape }}" loading="lazy">
+          {% else %}
+          {% assign parts = m.name | split: ' ' %}
+          <span class="team-initials" aria-hidden="true">{{ parts.first | slice: 0 }}{% if parts.size > 1 %}{{ parts.last | slice: 0 }}{% endif %}</span>
+          {% endif %}
+        </div>
+        <div class="team-body">
+          <span class="team-role"{% if m.role_key %} data-i18n="about.team.roles.{{ m.role_key }}"{% endif %}>{{ m.role }}</span>
+          <h3 class="team-name">{{ m.name }}</h3>
+          <p class="team-bio" data-i18n="about.team.{{ m.id }}.bio">{{ m.bio }}</p>
+          {% if m.email != "" and m.email or m.linkedin != "" and m.linkedin %}
+          <div class="team-links">
+            {% if m.email and m.email != "" %}<a href="mailto:{{ m.email }}" aria-label="Email {{ m.name | escape }}"><i class="fas fa-envelope" aria-hidden="true"></i></a>{% endif %}
+            {% if m.linkedin and m.linkedin != "" %}<a href="{{ m.linkedin }}" target="_blank" rel="noopener" aria-label="{{ m.name | escape }} on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>{% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- Join CTA -->
+<section class="page-block">
+  <div class="container">
+    <div class="cta-band">
+      <p data-i18n="about.whatwedo.join">Join us at the Vancouver Odias Cultural Association as we continue to build a vibrant and thriving community, preserving our cherished traditions and creating new memories together. We welcome all who share an interest in Odia culture to become a part of our growing family!</p>
+      <div class="cta-actions">
+        <a href="mailto:{{ site.email }}" class="btn btn-light" data-i18n="about.story.button">Get involved</a>
+        <a href="{{ '/events' | relative_url }}" class="btn btn-ghost-light" data-i18n="about.values.button">See our events</a>
+      </div>
+    </div>
+  </div>
+</section>

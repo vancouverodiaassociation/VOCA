@@ -1,0 +1,27 @@
+{% comment %}
+  Shared event card.
+  Usage: {% include event-card.html event=event %}            upcoming event
+         {% include event-card.html event=event past=true %}  past event (no Register button)
+{% endcomment %}
+{% assign e = include.event %}
+<article class="event-card{% if include.past %} is-past{% endif %}">
+  <div class="event-image">
+    <img src="{{ e.image | relative_url }}" alt="{{ e.title | escape }}" loading="lazy">
+    {% if include.past %}<span class="event-badge" data-i18n="events.pastBadge">Past event</span>{% endif %}
+  </div>
+  <div class="event-content">
+    <div class="event-date">
+      <i class="far fa-calendar" aria-hidden="true"></i>
+      <span data-i18n="events.{{ e.id }}.dateLabel">{{ e.date_label }}{% if e.time %} &middot; {{ e.time }}{% endif %}</span>
+    </div>
+    <h3 class="event-title" data-i18n="events.{{ e.id }}.title">{{ e.title }}</h3>
+    <div class="event-location">
+      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+      <span data-i18n="events.{{ e.id }}.venue">{{ e.venue }}, {{ e.address }}</span>
+    </div>
+    <p class="event-description" data-i18n="events.{{ e.id }}.description">{{ e.description }}</p>
+    {% unless include.past %}{% if e.register_url %}
+    <a href="{{ e.register_url }}" class="btn event-register" target="_blank" rel="noopener" data-i18n="common.registerButton">Register</a>
+    {% endif %}{% endunless %}
+  </div>
+</article>

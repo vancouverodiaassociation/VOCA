@@ -15,10 +15,22 @@
 #   description - short blurb shown on the card
 #   register_url - Google Form (or other) registration link; omit if not open yet
 
-- id: diwali-2025
+- id: workshop-2026
+  title: "Cultural Workshop"
+  date: 2026-12-01
+  date_label: "Thursday, July 16, 2026"
+  time: "7:00 PM"
+  venue: "Hindu Temple, Burnaby"
+  address: "5420 Marine Dr, Burnaby, BC V5J 3G8"
+  image: "/assets/images/events/event3.jpg"
+  description: >-
+    Learn about Odisha's rich cultural heritage, including traditional arts, crafts, and language in this interactive workshop.
+  register_url: "https://forms.gle/wdT23q7mWRX7g8XS8"
+
+- id: diwali-2026
   title: "Diwali: Festival of Lights"
-  date: 2025-11-02
-  date_label: "Sunday, November 2, 2025"
+  date: 2026-11-01
+  date_label: "Sunday, November 8, 2026"
   time: "5:00 PM"
   venue: "Sullivan Community Hall"
   address: "6306 152 St, Surrey, BC V3S 3K9"
@@ -27,4 +39,28 @@
     Join us for Diwali, the festival of lights, as we celebrate the triumph of light over
     darkness. Experience the joy of coming together, sharing stories, and building
     unforgettable memories with the Vancouver Odias community. Register now to secure your spot!
+  register_url: "https://forms.gle/wdT23q7mWRX7g8XS8"
+
+- id: ratha-yatra-2026
+  title: "Rath Yatra Festival"
+  date: 2026-07-01
+  date_label: "Thursday, July 16, 2026"
+  time: "10:00 AM"
+  venue: "Laxmi Narayan Mandir, Surrey"
+  address: "8321 140 St, Surrey, BC V3W 5K9"
+  image: "/assets/images/events/event2.jpg"
+  description: >-
+    Experience the grand celebration of Rath Yatra, featuring a chariot procession, cultural performances, and community gathering.
+  register_url: "https://forms.gle/wdT23q7mWRX7g8XS8"
+
+- id: saraswati-puja-2026
+  title: "Saraswati Puja"
+  date: 2026-02-01
+  date_label: "Friday, January 23, 2026"
+  time: "11:00 AM"
+  venue: "Laxmi Narayan Mandir, Surrey"
+  address: "8321 140 St, Surrey, BC V3W 5K9"
+  image: "/assets/images/events/saraswati-puja.jpg"
+  description: >-
+    Experience the grand celebration of Rath Yatra, featuring a chariot procession, cultural performances, and community gathering.
   register_url: "https://forms.gle/wdT23q7mWRX7g8XS8"

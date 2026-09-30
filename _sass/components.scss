@@ -1,28 +1,3 @@
-// Calendar Section
-.calendar-section {
-  .calendar-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    
-    iframe {
-      width: 100%;
-      max-width: 1000px;
-      min-width: 300px;
-      height: 600px;
-      border: none;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      
-      @media (max-width: 768px) {
-        height: 500px;
-      }
-    }
-  }
-}
-
 // Button styles
 .btn {
   @include button($primary-color, white, adjust-color($primary-color, $lightness: -10%));
@@ -78,6 +53,10 @@
       height: 100%;
       width: auto;
     }
+    
+    @media (max-width: #{$breakpoint-md - 1px}) {
+      margin-right: auto;
+    }
   }
   
   .main-nav {
@@ -124,6 +103,8 @@
     width: 30px;
     height: 30px;
     position: relative;
+    order: 3;
+    margin-left: 1rem;
     
     @include respond-to(md) {
       display: none;
@@ -156,6 +137,7 @@
   .controls {
     @include flex(row, center, center);
     gap: 1rem;
+    order: 2;
   }
   
   .theme-toggle {
@@ -461,7 +443,11 @@ body.modal-open {
   position: relative;
   height: 500px;
   overflow: hidden;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
+  
+  @media (max-width: #{$breakpoint-md - 1px}) {
+    height: auto;
+  }
   
   .banner-image {
     position: absolute;
@@ -470,8 +456,15 @@ body.modal-open {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.85) saturate(1.1);
+    filter: brightness(1) saturate(1.1);
     transition: filter 0.5s;
+    
+    @media (max-width: #{$breakpoint-md - 1px}) {
+      position: static;
+      display: block;
+      height: auto;
+      object-fit: contain;
+    }
   }
   
   .banner-overlay {
@@ -480,7 +473,7 @@ body.modal-open {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.8));
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.25));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -571,8 +564,6 @@ body.modal-open {
 
   // Mobile styles
   @media (max-width: 600px) {
-    height: 380px;
-    min-height: 220px;
     .banner-content {
       padding: 1.1rem 0.5rem;
       border-radius: 0.7rem;

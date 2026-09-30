@@ -4,6 +4,20 @@ title: Events
 lang: en
 ---
 
+{% assign today = site.time | date: '%Y-%m-%d' %}
+{% assign sorted_events = site.data.events | sort: 'date' %}
+{% assign upcoming_events = '' | split: '' %}
+{% assign past_events = '' | split: '' %}
+{% for ev in sorted_events %}
+  {% assign ev_day = ev.date | date: '%Y-%m-%d' %}
+  {% if ev_day >= today %}
+    {% assign upcoming_events = upcoming_events | push: ev %}
+  {% else %}
+    {% assign past_events = past_events | push: ev %}
+  {% endif %}
+{% endfor %}
+{% assign past_events = past_events | reverse %}
+
 <section class="page-section featured-events">
   <div class="container">
     <div class="section-header">
@@ -12,34 +26,25 @@ lang: en
       <p data-i18n="events.pageIntro">Stay up-to-date with our social gatherings, cultural events, picnics, and festivals. Join us in celebrating our community and creating lasting memories. Discover our upcoming events and register to participate!</p>
     </div>
 
+    <h2 class="events-subheading" data-i18n="events.upcomingTitle">Upcoming Events</h2>
+    {% if upcoming_events.size > 0 %}
     <div class="events-grid">
-      {% assign all_events = site.data.events | sort: 'date' %}
-      {% for event in all_events %}
-      <div class="event-card">
-        <div class="event-image">
-          <img src="{{ event.image | relative_url }}" alt="{{ event.title | escape }}">
-        </div>
-        <div class="event-content">
-          <h3 class="event-title" data-i18n="events.{{ event.id }}.title">{{ event.title }}</h3>
-          <p class="event-description" data-i18n="events.{{ event.id }}.description">{{ event.description }}</p>
-          <div class="event-date">
-            <span data-i18n="events.timingLabel">Event Timing:</span>
-            <strong>{{ event.time }}, {{ event.date_label }}</strong>
-          </div>
-          <div class="event-location">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>
-              <span data-i18n="events.addressLabel">Event Address:</span>
-              {{ event.address }} ({{ event.venue }})
-            </span>
-          </div>
-          {% if event.register_url %}
-          <a href="{{ event.register_url }}" class="btn" target="_blank" rel="noopener" data-i18n="common.registerButton">Register</a>
-          {% endif %}
-        </div>
-      </div>
+      {% for event in upcoming_events %}
+        {% include event-card.html event=event %}
       {% endfor %}
     </div>
+    {% else %}
+    <p class="empty-state" data-i18n="home.events.none">No upcoming events right now. Check back soon or follow us on social media.</p>
+    {% endif %}
+
+    {% if past_events.size > 0 %}
+    <h2 class="events-subheading" data-i18n="events.pastTitle">Past Events</h2>
+    <div class="events-grid">
+      {% for event in past_events %}
+        {% include event-card.html event=event past=true %}
+      {% endfor %}
+    </div>
+    {% endif %}
 
     <div class="events-coming-soon">
       <h2 data-i18n="events.comingSoon.title">More events coming soon!</h2>

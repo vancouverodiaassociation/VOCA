@@ -1,0 +1,86 @@
+# _data/team.yml
+#
+# "Our Team" section on the About page. Update `year` and the members each term.
+#
+# Fields per member:
+#   id        - unique slug; also used for optional Odia text: about.team.<id>.bio in or.json
+#   name      - full name
+#   role      - title shown on the card
+#   role_key  - optional; translates the role via about.team.roles.<role_key> in the i18n files
+#   photo     - optional; path to a square-ish photo (at least 400x400, JPG under 300 KB is ideal).
+#               When empty, the card shows the member's initials.
+#   bio       - 1–3 sentences: background, time with VOCA, what they look after
+#   email     - optional; shows a mail icon
+#   linkedin  - optional; full profile URL, shows a LinkedIn icon
+#
+# TODO: every entry below is a placeholder. Replace names, bios and photos with the
+# real 2026 committee before publishing.
+
+year: 2026
+
+members:
+  - id: president
+    name: "Member Name"
+    role: "President"
+    role_key: president
+    photo: "/assets/images/profile/profile1.png"
+    bio: >-
+      Leads the association and its executive committee, and represents VOCA with partner
+      organizations and the wider community.
+    email: ""
+    linkedin: ""
+
+  - id: vice-president
+    name: "Member Name"
+    role: "Vice President"
+    role_key: vicePresident
+    photo: "/assets/images/profile/profile2.png"
+    bio: >-
+      Supports the President, coordinates volunteers, and steps in to lead committee
+      work when needed.
+    email: ""
+    linkedin: ""
+
+  - id: general-secretary
+    name: "Member Name"
+    role: "General Secretary"
+    role_key: generalSecretary
+    photo: ""
+    bio: >-
+      Keeps the association running day to day: meetings, minutes, membership records
+      and official correspondence.
+    email: ""
+    linkedin: ""
+
+  - id: treasurer
+    name: "Member Name"
+    role: "Treasurer"
+    role_key: treasurer
+    photo: ""
+    bio: >-
+      Manages VOCA's finances, event budgets and sponsorship funds, and reports to members
+      on how funds are used.
+    email: ""
+    linkedin: ""
+
+  - id: cultural-secretary
+    name: "Member Name"
+    role: "Cultural Secretary"
+    role_key: culturalSecretary
+    photo: "/assets/images/profile/profile3.png"
+    bio: >-
+      Plans cultural programmes and festival performances, and works with artists to keep
+      Odia music, dance and traditions at the heart of every event.
+    email: ""
+    linkedin: ""
+
+  - id: media-secretary
+    name: "Member Name"
+    role: "Media Secretary"
+    role_key: mediaSecretary
+    photo: ""
+    bio: >-
+      Runs VOCA's website, social media and photography, and keeps the community informed
+      about upcoming events.
+    email: ""
+    linkedin: ""

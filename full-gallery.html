@@ -11,7 +11,22 @@ permalink: /gallery/ # This makes the URL yoursite.com/gallery/
     <p data-i18n="galleryPage.subtitle">Browse through photos from our events and gatherings.</p>
   </div>
 
+  <!-- Community photos (moved from the home page; files in assets/images/gallery/) -->
+  <section class="album-section" id="community-moments">
+    <h2 data-i18n="galleryPage.communityTitle">Community Moments</h2>
+    <div class="gallery-grid">
+      {% for i in (1..8) %}
+      {% capture photo_url %}{{ '/assets/images/gallery/gallery' | append: i | append: '.jpg' | relative_url }}{% endcapture %}
+      <a href="{{ photo_url }}" class="gallery-item" data-lightbox="community-moments" data-title="VOCA community photo {{ i }}">
+        <img src="{{ photo_url }}" alt="VOCA community photo {{ i }}" loading="lazy">
+        <span class="gallery-item-overlay"><i class="fas fa-search-plus"></i></span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
   {% if site.data.gdrive_gallery and site.data.gdrive_gallery.size > 0 %}
+    <hr class="album-separator">
     {% for album in site.data.gdrive_gallery %}
       <section class="album-section" id="{{ album.album_id | slugify }}">
         <h2>{{ album.album_title | escape }}</h2>
