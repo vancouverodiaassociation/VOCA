@@ -12,10 +12,9 @@
     font-size: 2.2em; // Slightly larger heading for albums
     margin-bottom: 25px;
     padding-bottom: 10px;
-    // Theme-aware colors will be inherited or can be set via variables if your setup uses them.
-    // Default light theme:
-    color: #333;
-    border-bottom: 2px solid #eee;
+    // Theme-aware: inherits warm neutrals from the active theme.
+    color: var(--text-color);
+    border-bottom: 2px solid var(--border-color);
   }
 }
 
@@ -30,17 +29,5 @@
   margin-top: 40px;
   margin-bottom: 40px;
   border: 0;
-  // Default light theme:
-  border-top: 1px solid #eee;
-}
-
-// Dark theme adjustments (can also be handled in main theme logic if variables are used)
-body.theme-dark {
-  .album-section h2 {
-    color: #f0f0f0;
-    border-bottom-color: #555;
-  }
-  .album-separator {
-    border-top-color: #555;
-  }
+  border-top: 1px solid var(--border-color);
 }

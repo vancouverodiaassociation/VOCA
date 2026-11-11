@@ -28,13 +28,13 @@ social_links:
 
 # Theme colors
 theme_colors:
-  primary: "#FF7722"   # Orange
-  secondary: "#FFA55A" # Light Orange
-  accent: "#FFD8B5"    # Very Light Orange
-  dark_bg: "#1F1F1F"
-  dark_text: "#F5F5F5"
-  light_bg: "#FFFFFF"
-  light_text: "#333333"
+  primary: "#C1272D"   # Temple-flag crimson
+  secondary: "#E8A13A" # Turmeric gold
+  accent: "#D96C3F"    # Konark terracotta
+  dark_bg: "#1A1613"
+  dark_text: "#F3ECE2"
+  light_bg: "#FAF6F0"
+  light_text: "#1E1B18"
 
 # Collections
 collections:

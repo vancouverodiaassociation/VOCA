@@ -53,7 +53,7 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: $primary-color;
+  color: var(--primary);
   margin-bottom: 0.5rem;
 }
 
@@ -133,7 +133,7 @@
       justify-content: center;
       border-radius: 50%;
       background-color: rgba($primary-color, 0.12);
-      color: $primary-color;
+      color: var(--primary);
       font-size: 0.95rem;
     }
   }
@@ -234,11 +234,11 @@
 
 .btn-light {
   background-color: #fff;
-  color: $primary-color;
+  color: var(--primary);
   white-space: nowrap;
   
   &:hover, &:focus {
-    background-color: $accent-color;
+    background-color: var(--accent);
     color: darken($primary-color, 10%) !important;
   }
 }
@@ -403,7 +403,7 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      color: $primary-color;
+      color: var(--primary);
       font-weight: 600;
       font-size: 0.9rem;
       margin-bottom: 0.5rem;
@@ -424,7 +424,7 @@
       opacity: 0.8;
       
       i {
-        color: $primary-color;
+        color: var(--primary);
         margin-top: 0.2rem;
       }
     }
@@ -466,13 +466,13 @@
         transition: all $transition-speed ease;
         
         &:hover {
-          border-color: $primary-color;
-          color: $primary-color;
+          border-color: var(--primary);
+          color: var(--primary);
         }
         
         &.active {
-          background-color: $primary-color;
-          border-color: $primary-color;
+          background-color: var(--primary);
+          border-color: var(--primary);
           color: white;
         }
       }
@@ -525,7 +525,7 @@
             opacity: 0.8;
             
             i {
-              color: $primary-color;
+              color: var(--primary);
             }
           }
         }
@@ -569,7 +569,7 @@
         font-size: 1rem;
         
         i {
-          color: $primary-color;
+          color: var(--primary);
         }
       }
     }
@@ -600,7 +600,7 @@
       flex: 2;
       
       h3 {
-        color: $primary-color;
+        color: var(--primary);
         margin-bottom: 1rem;
       }
     }
@@ -616,7 +616,7 @@
         border: 1px solid var(--border-color);
         
         h4 {
-          color: $primary-color;
+          color: var(--primary);
           margin-bottom: 1rem;
           padding-bottom: 0.5rem;
           border-bottom: 1px solid var(--border-color);
@@ -639,7 +639,7 @@
             margin-bottom: 1rem;
             
             i {
-              color: $primary-color;
+              color: var(--primary);
               margin-top: 0.25rem;
             }
             
@@ -661,7 +661,7 @@
     margin-top: 3rem;
     
     h3 {
-      color: $primary-color;
+      color: var(--primary);
       margin-bottom: 1.5rem;
     }
     
@@ -718,13 +718,13 @@
         transition: all $transition-speed ease;
         
         &:hover {
-          border-color: $primary-color;
-          color: $primary-color;
+          border-color: var(--primary);
+          color: var(--primary);
         }
         
         &.active {
-          background-color: $primary-color;
-          border-color: $primary-color;
+          background-color: var(--primary);
+          border-color: var(--primary);
           color: white;
         }
       }
@@ -975,7 +975,7 @@
     }
     
     i {
-      color: $primary-color;
+      color: var(--primary);
       font-size: 1.15rem;
       margin-top: 0.2rem;
       width: 1.25rem;
@@ -1084,7 +1084,7 @@
     padding: 0.25rem 0.85rem;
     border-radius: 999px;
     background-color: rgba($primary-color, 0.12);
-    color: $primary-color;
+    color: var(--primary);
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.04em;
@@ -1121,8 +1121,8 @@
       transition: background-color $transition-speed ease, color $transition-speed ease;
       
       &:hover, &:focus {
-        background-color: $primary-color;
-        border-color: $primary-color;
+        background-color: var(--primary);
+        border-color: var(--primary);
         color: #fff;
       }
     }
@@ -1143,7 +1143,7 @@
       flex: 1;
       
       h2 {
-        color: $primary-color;
+        color: var(--primary);
         margin-bottom: 1.5rem;
       }
       
@@ -1158,7 +1158,7 @@
           margin-bottom: 1.5rem;
           
           i {
-            color: $primary-color;
+            color: var(--primary);
             font-size: 1.25rem;
             margin-top: 0.25rem;
           }
@@ -1193,7 +1193,7 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background-color: $primary-color;
+            background-color: var(--primary);
             color: white;
             font-size: 1.25rem;
             transition: transform $transition-speed ease, background-color $transition-speed ease;
@@ -1215,7 +1215,7 @@
       border: 1px solid var(--border-color);
       
       h2 {
-        color: $primary-color;
+        color: var(--primary);
         margin-bottom: 1.5rem;
       }
       
@@ -1238,7 +1238,7 @@
           
           &:focus {
             outline: none;
-            border-color: $primary-color;
+            border-color: var(--primary);
           }
         }
         

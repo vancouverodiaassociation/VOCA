@@ -27,6 +27,10 @@ body {
   --text-color: #{$light-text};
   --border-color: #{$light-border};
   --card-bg: #{$light-card-bg};
+  --text-muted: #{$light-text-muted};
+  --primary: #{$primary-color};
+  --secondary: #{$secondary-color};
+  --accent: #{$accent-color};
 }
 
 .theme-dark {
@@ -34,6 +38,10 @@ body {
   --text-color: #{$dark-text};
   --border-color: #{$dark-border};
   --card-bg: #{$dark-card-bg};
+  --text-muted: #{$dark-text-muted};
+  --primary: #{$dark-primary};
+  --secondary: #{$dark-secondary};
+  --accent: #{$dark-accent};
 }
 
 // Typography
@@ -54,12 +62,12 @@ p {
 }
 
 a {
-  color: $primary-color;
+  color: var(--primary);
   text-decoration: none;
   transition: color $transition-speed ease;
   
   &:hover {
-    color: adjust-color($primary-color, $lightness: -10%);
+    filter: brightness(0.85);
   }
 }
 

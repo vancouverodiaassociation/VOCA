@@ -19,7 +19,7 @@
   &:hover, &:focus {
     background: $primary-color !important;
     color: #fff !important;
-    border-color: $primary-color;
+    border-color: var(--primary);
   }
 }
 
@@ -86,11 +86,11 @@
       
       &:hover {
         background-color: adjust-color($primary-color, $alpha: -0.9);
-        color: $primary-color;
+        color: var(--primary);
       }
       
       &.active {
-        color: $primary-color;
+        color: var(--primary);
       }
     }
   }
@@ -208,11 +208,11 @@
         
         &:hover {
           background-color: adjust-color($primary-color, $alpha: -0.9);
-          color: $primary-color;
+          color: var(--primary);
         }
         
         &.active {
-          background-color: $primary-color;
+          background-color: var(--primary);
           color: white;
         }
       }
@@ -256,7 +256,7 @@
     padding: 0.5rem 0;
     
     &:hover, &.active {
-      color: $primary-color;
+      color: var(--primary);
     }
   }
   
@@ -309,7 +309,7 @@
     h3 {
       font-size: 1.25rem;
       margin-bottom: 1rem;
-      color: $primary-color;
+      color: var(--primary);
     }
     
     ul {
@@ -326,7 +326,7 @@
       color: var(--text-color);
       
       &:hover {
-        color: $primary-color;
+        color: var(--primary);
       }
     }
   }
@@ -335,7 +335,7 @@
     h3 {
       font-size: 1.25rem;
       margin-bottom: 1rem;
-      color: $primary-color;
+      color: var(--primary);
     }
     
     .social-icons {
@@ -348,7 +348,7 @@
         transition: color $transition-speed ease, transform $transition-speed ease;
         
         &:hover {
-          color: $primary-color;
+          color: var(--primary);
           transform: translateY(-3px);
         }
       }
@@ -399,7 +399,7 @@
 
     &:hover,
     &:focus {
-      color: $primary-color;
+      color: var(--primary);
       text-decoration: none;
       cursor: pointer;
     }
@@ -416,7 +416,7 @@
     }
     h2 {
       margin-top: 0;
-      color: $primary-color;
+      color: var(--primary);
     }
     p {
       margin-bottom: 0.75rem;
@@ -499,7 +499,7 @@ body.modal-open {
       font-size: 2.7rem;
       margin-bottom: 1rem;
       letter-spacing: 2px;
-      background: linear-gradient(90deg, #23c6e6 0%, #20c997 40%, #FF7722 100%);
+      background: linear-gradient(90deg, #{$primary-color} 0%, #{$accent-color} 55%, #{$secondary-color} 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -511,7 +511,7 @@ body.modal-open {
     p {
       font-size: 1.3rem;
       margin-bottom: 2rem;
-      background: linear-gradient(90deg, #23c6e6 0%, #FFA55A 100%);
+      background: linear-gradient(90deg, #{$accent-color} 0%, #{$secondary-color} 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
